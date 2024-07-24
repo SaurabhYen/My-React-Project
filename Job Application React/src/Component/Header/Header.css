@@ -1,0 +1,25 @@
+.my-nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 53, 53);
+}
+.web_Logo{
+    height: 90%;
+}
+
+.my-ul-listItem{
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+   
+}
+.my-list{
+ 
+}

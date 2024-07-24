@@ -1,0 +1,23 @@
+
+
+.form-cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.my-form{
+    width: 30%;
+    color: white;
+    background-color: rgb(47, 45, 45);
+    padding: 20px;
+    border-radius: 10px;
+}
+.submitBtn{
+    margin-top: 10px;
+    width: 100%;
+    
+}
