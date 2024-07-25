@@ -3,7 +3,9 @@ import { useState } from "react"
 import { useEffect } from "react"
 import Cookies from "js-cookie"
 
-export default function FilterJob(){
+export default function FilterJob(props){
+    let {EmployeeFun,EmpSalary}=props;
+    
 
     const [allValues,setallValue]=useState({
         profileDetail:{}
@@ -71,13 +73,17 @@ export default function FilterJob(){
                   
                     
                 }
-               
-
              }
              profilDetalFunction();
    },[])
+        function onclikEmpType(e){
+            EmployeeFun(e.target.value,e.target.checked);
+        }
 
-
+        function onclickSalary(e){
+            EmpSalary(e.target.value)
+        }
+        
     return (
         
             <>
@@ -95,8 +101,8 @@ export default function FilterJob(){
                             { 
                                 obj.map((e)=>{
                                         return <li className="list-employe-type" key={e.EmplyoeeId}>
-                                                    <input type="checkbox" className="inpcheckBox"  id={e.EmplyoeeId} />
-                                                    <label htmlFor={e.EmplyoeeId}>{e.EmplyoeeType}</label>
+                                                    <input type="checkbox" onClick={onclikEmpType} value={e.EmplyoeeId}   className="inpcheckBox"  id={e.EmplyoeeId} />
+                                                    <label  htmlFor={e.EmplyoeeId}>{e.EmplyoeeType}</label>
                                                 </li>
                                     })
                                 }
@@ -111,7 +117,7 @@ export default function FilterJob(){
                             { 
                                 salaryRange.map((e)=>{
                                         return <li className="list-employe-type" key={e.salaryRangeId}>
-                                                    <input type="checkbox" className="inpcheckBox"  id={e.salaryRangeId} />
+                                                    <input type="radio" onClick={onclickSalary} value={e.salaryRangeId} className="inpcheckBox" name="salary" id={e.salaryRangeId} />
                                                     <label htmlFor={e.salaryRangeId}>{e.label}</label>
                                                 </li>
                                     })

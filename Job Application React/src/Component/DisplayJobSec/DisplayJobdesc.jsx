@@ -32,8 +32,9 @@ export default function DisplayJob(prop){
 
                   <div className="location-sec">
                      <span className="locaton-desc">
-                        <p><IoLocationSharp className="locationIcon" />Delhi </p>
-                        <p> <PiHandbagSimpleFill className="locationIcon" /> Internship</p>
+                        <p><IoLocationSharp className="locationIcon" />{listItem.location
+                        } </p>
+                        <p> <PiHandbagSimpleFill className="locationIcon" /> {listItem.employment_type}</p>
                      </span>
                      <h5>{listItem.package_per_annum}</h5>
                   </div>
