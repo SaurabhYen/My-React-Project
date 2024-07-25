@@ -1,0 +1,39 @@
+.profile-sec{
+    width: 100%;
+    height: 200px;
+    background: url(https://assets.ccbp.in/frontend/react-js/profile-bg.png);
+    background-size: cover;
+    border-radius: 15px;
+    color:  black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.filter-job-sec{
+    color: white;    
+}
+.ullist-sec{
+    width: 100%;   
+}
+.list-employe-type{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.inpcheckBox{
+    margin-right: 10px;
+}
+.seperation{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.employee-sec h3{
+    margin-bottom: 20px;
+}

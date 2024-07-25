@@ -1,0 +1,19 @@
+.job-sec{
+    width: 100%;
+    background-color: black;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.filter-job-sec{
+    width: 35%;
+    padding: 25px;
+}
+.display-All-job-sec{
+    width: 65%;
+    padding: 25px;
+}
+.display-job-ul{
+   
+}

@@ -1,0 +1,24 @@
+.Home-cont{
+height: 100vh;
+width: 100vw;
+background: url(https://assets.ccbp.in/frontend/react-js/home-lg-bg.png);
+background-size: cover;
+color: white;
+}
+
+.home-left-cont{
+    width: 35%; 
+    height: 40%;
+    margin-left: 30px;
+    margin-top: 80px;   
+}
+.home-left-cont h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.home-left-cont p{
+  font-size: 17px;
+}
+.jobBtnt{
+margin-top: 10px;
+}

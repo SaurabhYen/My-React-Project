@@ -12,7 +12,7 @@ export default function Header(){
                 <li className="my-list">
                     <Link to='/' >Home</Link>
                 </li>
-                <li>
+                <li className="my-list">
                     <Link to='/job'>Jobs</Link>
                 </li>
             </ul>
