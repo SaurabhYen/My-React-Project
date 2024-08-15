@@ -1,0 +1,157 @@
+.display-job-sec{
+    text-decoration: none;
+   
+}
+
+.job-cards{
+   
+    background-color: black;
+    list-style: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.job-card-content{
+    margin-top: 100px;
+    width: 80%;
+    background-color: rgb(77, 72, 72);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.jobcard-top-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.companyName{
+    width: 70px;
+    margin-right: 10px;
+}
+.ratingSec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.star-icon{
+    color: rgb(247, 142, 67);
+    margin-right: 8px;
+}
+
+.location-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.locaton-desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.locaton-desc p{
+    margin-right: 10px;
+}
+.locationIcon{
+    margin-right: 5px;
+}
+
+.separation{
+    width: 100%;
+    background-color: rgb(160, 158, 158);
+    height: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/* skills sec */
+.skill-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.company-name-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+}
+.skils-copnylogo-img{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-right: 19px;
+}
+.image_url{
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+/* life at Company sec */
+.life-at-Com-sec{
+    margin-top: 20px;
+}
+.com-info-sec{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 10px;
+
+}
+.cmpn-desc{
+    width: 40%;
+    height: 50vh;
+    text-align: justify;
+    font-size: 20px;
+
+}
+.cmpn-Img{
+    width: 50%;
+    height: 50vh;
+}
+.similarjob-Heading{
+    width: 80%;
+}
+.similar-job-sec{
+    width: 80%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.simliarJob-card{
+    width: 40%;
+    background-color:rgb(77, 72, 72) ;
+    margin-right: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.top-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.similar-job-logo{
+    width: 70px;
+    margin-right: 10px;
+}

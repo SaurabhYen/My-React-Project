@@ -2,6 +2,7 @@ import "./DisplayJob.css"
 import { IoIosStar } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { PiHandbagSimpleFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 
 export default function DisplayJob(prop){
@@ -17,7 +18,9 @@ export default function DisplayJob(prop){
     // title: "Devops Engineer"}
 
     return (
-         <li className="job-card">
+      // 
+        <Link to={`/job/${listItem.id}`} className="display-job-sec">
+              <li className="job-card" >
                <div className="job-card-cont">
                   <div className="jobcard-top-cont">
                     <img src={listItem.company_logo_url} alt="" className="companyName"/>
@@ -46,5 +49,6 @@ export default function DisplayJob(prop){
 
                </div>
          </li>
+        </Link>
     )
 }

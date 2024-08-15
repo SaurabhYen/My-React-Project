@@ -3,6 +3,7 @@ import "./Home.css"
 import { useNavigate } from "react-router-dom";
 
 
+
 export default function Home(){
     let navigate=useNavigate();
     let btnClik=()=>{

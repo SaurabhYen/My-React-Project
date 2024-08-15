@@ -1,7 +1,16 @@
 import "./Header.css"
-import { Link } from "react-router-dom"
+import { Link  } from "react-router-dom"
+import Cookies from "js-cookie"
+import { useNavigate } from "react-router-dom"
 
 export default function Header(){
+    let token=Cookies.get("jwtToken")
+    let navigate= useNavigate()
+    let onLogout=()=>{
+       Cookies.remove("jwtToken")
+       navigate('/login')
+        
+    }
     return (
         <nav className="my-nav">
             <Link  to='/'>
@@ -17,7 +26,7 @@ export default function Header(){
                 </li>
             </ul>
 
-            <button type="button" className="btn btn-primary">Logout</button>
+            <button type="button" className="btn btn-primary" onClick={onLogout}>Logout</button>
 
         </nav>
     )
