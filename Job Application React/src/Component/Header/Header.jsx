@@ -26,7 +26,7 @@ export default function Header(){
                 </li>
             </ul>
 
-            <button type="button" className="btn btn-primary" onClick={onLogout}>Logout</button>
+            <button type="button" className="btn btn-primary logoutBtn" onClick={onLogout}>Logout</button>
 
         </nav>
     )

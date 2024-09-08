@@ -1,6 +1,5 @@
 .display-job-sec{
     text-decoration: none;
-   
 }
 
 .job-cards{
@@ -93,6 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
     margin-right: 19px;
 }
 .image_url{
@@ -117,7 +117,7 @@
     width: 40%;
     height: 50vh;
     text-align: justify;
-    font-size: 20px;
+    font-size: 17px;
 
 }
 .cmpn-Img{
@@ -154,4 +154,73 @@
 .similar-job-logo{
     width: 70px;
     margin-right: 10px;
+}
+
+
+
+@media (min-width:350px) and (max-width:768px) {
+    .job-card-content{
+        margin-top: 20px;
+        width: 80%;
+        background-color: rgb(77, 72, 72);
+        margin-bottom: 10px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .company-name-sec{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+    }
+    .com-info-sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 10px;
+    
+    }
+    .com-info-sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 10px;
+    
+    }
+    .cmpn-desc{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+        height: 35vh;
+    }
+    .cmpn-Img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+
+    .similar-job-sec{
+        width: 90%;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+    }
+    .simliarJob-card{
+        width: 90%;
+        background-color:rgb(77, 72, 72) ;
+        margin-right: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
 }

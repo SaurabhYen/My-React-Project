@@ -38,6 +38,8 @@ export default function Login(){
                   navigate('/')
                   Cookies.set("jwtToken",data.jwt_token)
              
+            }else{
+                setAllValues({...allValues,errMsg:data.error_msg})
             }
             
             
@@ -62,14 +64,13 @@ export default function Login(){
                 <div className="form-group">
                     <label htmlFor="exampleInputEmail1">username</label>
                     <input type="text" onChange={(e)=>{setAllValues({...allValues,username:e.target.value})}} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
                     <input type="password"  onChange={(e)=>{setAllValues({...allValues,password:e.target.value})}} className="form-control" id="exampleInputPassword1"/>
                 </div>
-                
-                <button type="submit" className="btn btn-primary submitBtn">Submit</button>
+                <p>{allValues.errMsg}</p>
+                <button type="submit" className="btn btn-primary submitBtn">Login</button>
               
             </form>
 

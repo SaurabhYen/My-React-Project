@@ -25,7 +25,7 @@ export default function DisplayJob(prop){
                   <div className="jobcard-top-cont">
                     <img src={listItem.company_logo_url} alt="" className="companyName"/>
                     <div className="job-card-bottom">
-                       <h3>{listItem.title}</h3>
+                       <h3> {listItem.title}</h3>
                        <span className="ratingSec">
                        <IoIosStar  className="star-icon" />
                        <h4>{listItem.rating}</h4>

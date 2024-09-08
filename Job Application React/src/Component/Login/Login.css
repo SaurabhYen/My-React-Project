@@ -16,8 +16,23 @@
     padding: 20px;
     border-radius: 10px;
 }
+.form-group{
+    margin-bottom: 20px;
+}
 .submitBtn{
-    margin-top: 10px;
+  
     width: 100%;
+    margin-top: 20px;
     
+}
+
+@media (min-width:350px) {
+    .my-form{
+        width: 80%;
+    }
+}
+@media (min-width:768px) {
+    .my-form{
+        width: 30%;
+    }
 }
